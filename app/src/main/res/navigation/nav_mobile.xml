@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mobile"
+    app:startDestination="@id/fragment1">
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.uty.arffestofoodandbeverages.fragment1.Fragment1"
+        android:label="fragment1_fragment1"
+        tools:layout="@layout/fragment1_fragment1" >
+        <action
+            android:id="@+id/action_fragment1_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.uty.arffestofoodandbeverages.fragment2.Fragment2"
+        android:label="fragment2_fragment2"
+        tools:layout="@layout/fragment2_fragment2" />
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.uty.arffestofoodandbeverages.fragment3.Fragment3"
+        android:label="fragment3_fragment3"
+        tools:layout="@layout/fragment3_fragment3" >
+        <action
+            android:id="@+id/action_fragment3_to_detailFragment3"
+            app:destination="@id/detailFragment3" />
+    </fragment>
+    <activity
+        android:id="@+id/detailFragment"
+        android:name="com.uty.arffestofoodandbeverages.fragment1.DetailFragment"
+        android:label="activity_detail_fragment"
+        tools:layout="@layout/activity_detail_fragment" />
+    <activity
+        android:id="@+id/detailActivityMakan"
+        android:name="com.uty.arffestofoodandbeverages.DetailActivityMakan"
+        android:label="activity_detail_makan"
+        tools:layout="@layout/activity_detail_makan" />
+    <activity
+        android:id="@+id/detailActivityMinum"
+        android:name="com.uty.arffestofoodandbeverages.DetailActivityMinum"
+        android:label="activity_detail_minum"
+        tools:layout="@layout/activity_detail_minum" />
+    <activity
+        android:id="@+id/mainActivityMakan"
+        android:name="com.uty.arffestofoodandbeverages.MainActivityMakan"
+        android:label="activity_main_makan"
+        tools:layout="@layout/activity_main_makan" />
+    <activity
+        android:id="@+id/mainActivityMinum"
+        android:name="com.uty.arffestofoodandbeverages.MainActivityMinum"
+        android:label="activity_main_minum"
+        tools:layout="@layout/activity_main_minum" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.uty.arffestofoodandbeverages.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/menuActivity"
+        android:name="com.uty.arffestofoodandbeverages.MenuActivity"
+        android:label="activity_menu"
+        tools:layout="@layout/activity_menu" />
+    <activity
+        android:id="@+id/detailFragment3"
+        android:name="com.uty.arffestofoodandbeverages.fragment3.DetailFragment3"
+        android:label="activity_detail_fragment3"
+        tools:layout="@layout/activity_detail_fragment3" />
+</navigation>

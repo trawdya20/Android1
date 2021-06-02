@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="30sp">
+
+            <ImageView
+                android:layout_width="423dp"
+                android:layout_height="120dp"
+                android:scaleType="center"
+                android:src="@drawable/cover" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MENU ARFFESTO FOOD AND BEVERAGES"
+                    style="@style/txtheading1"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/blacktransparan"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp">
+
+            <ImageView
+                android:layout_width="423dp"
+                android:layout_height="120dp"
+                android:scaleType="center"
+                android:src="@drawable/makan" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOOD"
+                    style="@style/txtheading1"
+                    android:textSize="16dp"
+                    android:id="@+id/button_menu_makananan"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/blacktransparan">
+
+                </Button>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp">
+
+            <ImageView
+                android:layout_width="423dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drink" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MINUMAN"
+                    style="@style/txtheading1"
+                    android:textSize="16dp"
+                    android:id="@+id/button_menu_minuman"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/blacktransparan">
+
+                </Button>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp">
+
+            <ImageView
+                android:layout_width="423dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER"
+                    style="@style/txtheading1"
+                    android:textSize="16dp"
+                    android:id="@+id/button_menu_oder"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/blacktransparan">
+
+                </Button>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp">
+
+            <ImageView
+                android:layout_width="423dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pesan" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN MASUKKAN"
+                    style="@style/txtheading1"
+                    android:textSize="16dp"
+                    android:id="@+id/button_menu_pesan"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/blacktransparan">
+
+                </Button>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

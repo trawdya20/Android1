@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment1.Fragment1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="423dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/daging" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Pesanan"
+                style="@style/txtheading1"
+                android:textSize="16dp"
+                android:id="@+id/button_menu_oder"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/blacktransparan">
+
+            </Button>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/text_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/text_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan Order"
+            style="@style/txtheading2"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_order">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:id="@+id/rb_delivery" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan diTempat"
+                android:id="@+id/rb_mkndtmpt" />
+        </RadioGroup>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:text="Tambahan Makanan" />
+
+            <EditText
+                android:id="@+id/text_psnmakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Makanan yang ingin kamu pesan" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_makanan"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/sp_psnmakan"/>
+
+            <EditText
+                android:id="@+id/text_psnminum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Minuman yang ingin kamu pesan" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_minum"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/sp_psnminum"/>
+
+
+        <EditText
+            android:id="@+id/text_psnketerangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Keterangan Tambahan" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gold"
+            android:text="Pesan"
+            android:id="@+id/button_pesan"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

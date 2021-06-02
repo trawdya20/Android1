@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cardview_minum">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/list_img_minum"
+            android:src="@drawable/drk"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tittle"
+            android:textSize="18sp"
+            android:id="@+id/list_title_drink"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="18sp"
+            android:id="@+id/list_price_drink"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bahan"
+            android:textSize="18sp"
+            android:id="@+id/list_bahan_drink"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manfaat"
+            android:textSize="18sp"
+            android:id="@+id/list_manfaat_drink"
+            android:textColor="@color/gold"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
